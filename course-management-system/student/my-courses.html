@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Registered Courses | StudySphere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/courses.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-brand"><a href="../index.html">Study<span>Sphere</span></a></div>
+            <nav class="sidebar-menu">
+                <a href="student-dashboard.html" class="menu-item"><span class="menu-icon">🏠</span> Dashboard</a>
+                <a href="browse-courses.html" class="menu-item"><span class="menu-icon">🔍</span> Browse Courses</a>
+                <a href="my-courses.html" class="menu-item active"><span class="menu-icon">📚</span> My Courses</a>
+                <a href="progress.html" class="menu-item"><span class="menu-icon">📈</span> Progress</a>
+                <a href="notifications.html" class="menu-item"><span class="menu-icon">🔔</span> Notifications</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile-summary"><div class="avatar">JS</div><div class="user-info"><h4>Jane Student</h4></div></div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div>
+                    <h1>My Enrolled Courses</h1>
+                    <p>Continue your current active modular curriculum specializations.</p>
+                </div>
+            </header>
+
+            <div class="active-courses-list" style="background-color: var(--white); padding: 2rem; border-radius: 0.5rem; border: 1px solid var(--border-color);">
+                <div class="active-course-row">
+                    <div class="course-row-meta">
+                        <h3>Introduction to UI/UX Engineering Layouts</h3>
+                        <p>Next: Module 3: Visual Hierarchies and Design Systems</p>
+                    </div>
+                    <div class="course-row-progress-block">
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 65%;"></div></div>
+                        <span class="progress-text-pct">65% Completed</span>
+                    </div>
+                    <div class="course-row-action"><a href="course-content.html" class="btn btn-secondary">Resume Class</a></div>
+                </div>
+
+                <div class="active-course-row">
+                    <div class="course-row-meta">
+                        <h3>Modern Javascript Architectural Patterns</h3>
+                        <p>Next: Module 1: Asynchronous Execution and Engine Mechanics</p>
+                    </div>
+                    <div class="course-row-progress-block">
+                        <div class="progress-bar-container"><div class="progress-bar" style="width: 12%;"></div></div>
+                        <span class="progress-text-pct">12% Completed</span>
+                    </div>
+                    <div class="course-row-action"><a href="course-content.html" class="btn btn-secondary">Resume Class</a></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

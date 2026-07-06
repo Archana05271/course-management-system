@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | StudySphere Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <a href="../index.html">Study<span>Sphere</span></a>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="student-dashboard.html" class="menu-item active">
+                    <span class="menu-icon">🏠</span> Dashboard
+                </a>
+                <a href="browse-courses.html" class="menu-item">
+                    <span class="menu-icon">🔍</span> Browse Courses
+                </a>
+                <a href="my-courses.html" class="menu-item">
+                    <span class="menu-icon">📚</span> My Courses
+                </a>
+                <a href="progress.html" class="menu-item">
+                    <span class="menu-icon">📈</span> Analytics & Progress
+                </a>
+                <a href="notifications.html" class="menu-item">
+                    <span class="menu-icon">🔔</span> Notifications <span class="badge">2</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile-summary">
+                    <div class="avatar">JS</div>
+                    <div class="user-info">
+                        <h4>Jane Student</h4>
+                        <p>Student Profile</p>
+                    </div>
+                </div>
+                <a href="../auth/student-login.html" class="btn-logout">Sign Out <span>➡️</span></a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="content-header">
+                <div class="header-welcome">
+                    <h1>Welcome back, Jane! 👋</h1>
+                    <p>Track your active modules and resume your educational tracks.</p>
+                </div>
+                <div class="header-actions">
+                    <a href="browse-courses.html" class="btn btn-primary">+ Explore New Courses</a>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon blue">📚</div>
+                    <div class="metric-details">
+                        <span class="metric-label">Enrolled Programs</span>
+                        <h3 class="metric-value">3 Courses</h3>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon green">🏆</div>
+                    <div class="metric-details">
+                        <span class="metric-label">Earned Certificates</span>
+                        <h3 class="metric-value">1 Certificate</h3>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon orange">⏱️</div>
+                    <div class="metric-details">
+                        <span class="metric-label">Study Time This Week</span>
+                        <h3 class="metric-value">5.4 Hours</h3>
+                    </div>
+                </div>
+            </section>
+
+            <div class="workspace-grid">
+                
+                <div class="workspace-main">
+                    <div class="card-header-wrapper">
+                        <h2>In-Progress Courses</h2>
+                        <a href="my-courses.html" class="view-all-link">See All Courses</a>
+                    </div>
+                    
+                    <div class="active-courses-list">
+                        <div class="active-course-row">
+                            <div class="course-row-meta">
+                                <h3>Introduction to UI/UX Engineering Layouts</h3>
+                                <p>Module 3: Visual Hierarchies and Design Systems</p>
+                            </div>
+                            <div class="course-row-progress-block">
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 65%;"></div>
+                                </div>
+                                <span class="progress-text-pct">65% Complete</span>
+                            </div>
+                            <div class="course-row-action">
+                                <a href="course-content.html" class="btn btn-secondary">Resume Learning</a>
+                            </div>
+                        </div>
+
+                        <div class="active-course-row">
+                            <div class="course-row-meta">
+                                <h3>Modern Javascript Architectural Patterns</h3>
+                                <p>Module 1: Asynchronous Execution and Engine Mechanics</p>
+                            </div>
+                            <div class="course-row-progress-block">
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 12%;"></div>
+                                </div>
+                                <span class="progress-text-pct">12% Complete</span>
+                            </div>
+                            <div class="course-row-action">
+                                <a href="course-content.html" class="btn btn-secondary">Resume Learning</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workspace-sidebar">
+                    <div class="sidebar-card-box">
+                        <h3>Upcoming Milestones</h3>
+                        <ul class="milestone-list">
+                            <li>
+                                <div class="milestone-bullet red"></div>
+                                <div class="milestone-info">
+                                    <h4>Design System Critique</h4>
+                                    <p>UI/UX Course • Due in 2 days</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="milestone-bullet orange"></div>
+                                <div class="milestone-info">
+                                    <h4>Asynchronous JavaScript Quiz</h4>
+                                    <p>JS Patterns • Due in 5 days</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card-box promo-card">
+                        <h3>Earning Verified Credentials</h3>
+                        <p>Complete your finalized courses to unlock certificates shareable on career networks.</p>
+                        <a href="certificate.html" class="btn btn-dark btn-block">View Your Credentials</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Courses | StudySphere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/courses.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        <!-- Sidebar Shell Component -->
+        <aside class="sidebar">
+            <div class="sidebar-brand"><a href="../index.html">Study<span>Sphere</span></a></div>
+            <nav class="sidebar-menu">
+                <a href="student-dashboard.html" class="menu-item"><span class="menu-icon">🏠</span> Dashboard</a>
+                <a href="browse-courses.html" class="menu-item active"><span class="menu-icon">🔍</span> Browse Courses</a>
+                <a href="my-courses.html" class="menu-item"><span class="menu-icon">📚</span> My Courses</a>
+                <a href="progress.html" class="menu-item"><span class="menu-icon">📈</span> Analytics & Progress</a>
+                <a href="notifications.html" class="menu-item"><span class="menu-icon">🔔</span> Notifications <span class="badge">2</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile-summary">
+                    <div class="avatar">JS</div>
+                    <div class="user-info"><h4>Jane Student</h4><p>Student Profile</p></div>
+                </div>
+                <a href="../auth/student-login.html" class="btn-logout">Sign Out <span>➡️</span></a>
+            </div>
+        </aside>
+
+        <!-- Main Body Catalog Context -->
+        <main class="main-content">
+            <header class="content-header">
+                <div>
+                    <h1>Educational Catalog</h1>
+                    <p>Discover courses compiled by academic and industry specialists.</p>
+                </div>
+            </header>
+
+            <div class="catalog-container">
+                <!-- Search & Filters -->
+                <div class="filter-bar">
+                    <div class="search-input-wrapper">
+                        <input type="text" placeholder="Search courses, tracks, skills...">
+                    </div>
+                    <div class="filter-selects">
+                        <select><option>All Categories</option><option>Engineering</option><option>Design Layouts</option></select>
+                        <select><option>All Levels</option><option>Beginner</option><option>Advanced</option></select>
+                    </div>
+                </div>
+
+                <!-- Courses Output Framework -->
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-thumbnail">🎨</div>
+                        <div class="course-card-content">
+                            <span class="course-tag">Design Layouts</span>
+                            <h3>Introduction to UI/UX Engineering Layouts</h3>
+                            <p>Master wireframing, high-fidelity compositions, typography rules, and structural design systems.</p>
+                            <div class="course-card-footer">
+                                <div class="course-meta-info"><span>⏱️ 12 Hours</span><span>📚 4 Modules</span></div>
+                                <a href="course-details.html" class="btn btn-secondary">View Track</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-thumbnail">💻</div>
+                        <div class="course-card-content">
+                            <span class="course-tag">Engineering</span>
+                            <h3>Modern Javascript Architectural Patterns</h3>
+                            <p>Explore asynchronous execution mechanics, memory structures, event patterns, and advanced tracking configurations.</p>
+                            <div class="course-card-footer">
+                                <div class="course-meta-info"><span>⏱️ 18 Hours</span><span>📚 6 Modules</span></div>
+                                <a href="course-details.html" class="btn btn-secondary">View Track</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-thumbnail">📊</div>
+                        <div class="course-card-content">
+                            <span class="course-tag">Data Science</span>
+                            <h3>Data Visualizations and Metric Modeling</h3>
+                            <p>Analyze metrics and generate complex visualization dashboards using algorithmic structuring workflows.</p>
+                            <div class="course-card-footer">
+                                <div class="course-meta-info"><span>⏱:// 8 Hours</span><span>📚 3 Modules</span></div>
+                                <a href="course-details.html" class="btn btn-secondary">View Track</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

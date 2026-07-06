@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Registration | StudySphere</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="logo"><a href="../index.html">Study<span>Sphere</span></a></div>
+            <h2>Register Institution</h2>
+            <p>Setup an administrative workspace to start publishing digital content.</p>
+        </div>
+
+        <form class="auth-form" action="admin-login.html" method="GET">
+            <div class="form-group">
+                <label for="org-name">Institution / Company Name</label>
+                <input type="text" id="org-name" name="org-name" placeholder="StudySphere Academy" required>
+            </div>
+
+            <div class="form-group">
+                <label for="admin-name">Administrator Name</label>
+                <input type="text" id="admin-name" name="admin-name" placeholder="Professor Smith" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Staff Email Address</label>
+                <input type="email" id="email" name="email" placeholder="smith@studysphere.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" required>
+            </div>
+
+            <div class="form-actions">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="admin-terms" name="terms" required>
+                    <label for="admin-terms">I accept the standard administrative compliance policies.</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark btn-block">Create Workspace</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Already configured? <a href="admin-login.html" class="auth-link">Sign In to Dashboard</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

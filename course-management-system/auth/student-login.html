@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | StudySphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-container">
+        <div class="auth-header">
+            <div class="logo"><a href="../index.html">Study<span>Sphere</span></a></div>
+            <h2>Welcome Back!</h2>
+            <p>Log in to access your dashboard and continue learning.</p>
+        </div>
+
+        <form class="auth-form" action="../student/student-dashboard.html" method="GET">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <div class="label-wrapper">
+                    <label for="password">Password</label>
+                    <a href="forgot-password.html" class="auth-link small">Forgot Password?</a>
+                </div>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="form-actions">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Don't have an account? <a href="student-register.html" class="auth-link">Create a student account</a></p>
+            <p class="portal-switch">Are you an admin? <a href="admin-login.html">Go to Admin Portal</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

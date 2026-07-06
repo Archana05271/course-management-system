@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provision Asset Track | StudySphere Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar admin-sidebar">
+            <div class="sidebar-brand"><a href="../index.html">Study<span>Sphere</span></a></div>
+            <nav class="sidebar-menu">
+                <a href="admin-dashboard.html" class="menu-item"><span class="menu-icon">📊</span> Console Overview</a>
+                <a href="courses.html" class="menu-item active"><span class="menu-icon">📖</span> Manage Courses</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div>
+                    <h1>Provision New Curriculum Track Asset</h1>
+                    <p>Initialize structural field values inside database storage channels.</p>
+                </div>
+            </header>
+
+            <div class="admin-form-container">
+                <form action="courses.html" method="GET">
+                    <div class="form-group">
+                        <label>Course Schema Name</label>
+                        <input type="text" placeholder="e.g., Advanced Database Architecture Modeling Systems" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Domain Category Classification</label>
+                            <select><option>Engineering</option><option>Design Layouts</option><option>Data Networks</option></select>
+                        </div>
+                        <div class="form-group">
+                            <label>Difficulty Tier Boundary</label>
+                            <select><option>Beginner Tier Foundations</option><option>Intermediate Core Track</option><option>Advanced Engineering Level</option></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Syllabus Executive Summary Abstract Text</label>
+                        <textarea placeholder="Write descriptive summaries tracking complete lifecycle operational metrics..."></textarea>
+                    </div>
+
+                    <div class="form-actions-right">
+                        <a href="courses.html" class="btn btn-secondary">Cancel and Drop</a>
+                        <button type="submit" class="btn btn-dark">Commit Asset to Live Matrix</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

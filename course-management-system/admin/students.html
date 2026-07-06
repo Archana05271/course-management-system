@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Registry Ledger | StudySphere Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar admin-sidebar">
+            <div class="sidebar-brand"><a href="../index.html">Study<span>Sphere</span></a></div>
+            <nav class="sidebar-menu">
+                <a href="admin-dashboard.html" class="menu-item"><span class="menu-icon">📊</span> Console Overview</a>
+                <a href="courses.html" class="menu-item"><span class="menu-icon">📖</span> Manage Courses</a>
+                <a href="students.html" class="menu-item active"><span class="menu-icon">👥</span> Student Directory</a>
+                <a href="notifications.html" class="menu-item"><span class="menu-icon">🔔</span> Alerts</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div>
+                    <h1>Global Student Profile Registry Ledger</h1>
+                    <p>Audit system profile parameters, authorization tokens, and credential completion checkpoints.</p>
+                </div>
+            </header>
+
+            <div class="workspace-main" style="width:100%;">
+                <div class="table-responsive">
+                    <table class="admin-table">
+                        <thead>
+                            <tr><th>User System Profile Identity Name</th><th>Registered Verification Email</th><th>Enrolled Volume</th><th>Identity State Flag</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Jane Student</strong></td>
+                                <td>jane.student@gmail.com</td>
+                                <td>3 Live Program Tracks</td>
+                                <td><span class="status-badge success">Active Clearance</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>John Doe</strong></td>
+                                <td>john.doe@example.com</td>
+                                <td>1 Active Program Track</td>
+                                <td><span class="status-badge success">Active Clearance</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

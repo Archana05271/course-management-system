@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance & Analytics | StudySphere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-brand"><a href="../index.html">Study<span>Sphere</span></a></div>
+            <nav class="sidebar-menu">
+                <a href="student-dashboard.html" class="menu-item"><span class="menu-icon">🏠</span> Dashboard</a>
+                <a href="browse-courses.html" class="menu-item"><span class="menu-icon">🔍</span> Browse Courses</a>
+                <a href="my-courses.html" class="menu-item"><span class="menu-icon">📚</span> My Courses</a>
+                <a href="progress.html" class="menu-item active"><span class="menu-icon">📈</span> Analytics & Progress</a>
+                <a href="notifications.html" class="menu-item"><span class="menu-icon">🔔</span> Notifications</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile-summary"><div class="avatar">JS</div><div class="user-info"><h4>Jane Student</h4></div></div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div>
+                    <h1>Academic Analytics & Progress Metrics</h1>
+                    <p>Review comprehensive performance data logs and milestone trackers.</p>
+                </div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon blue">⏱️</div>
+                    <div class="metric-details"><span class="metric-label">Total Platform Time</span><h3 class="metric-value">44.8 Hours</h3></div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon green">📝</div>
+                    <div class="metric-details"><span class="metric-label">Quizzes Completed</span><h3 class="metric-value">12 / 14 Passed</h3></div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon orange">🚀</div>
+                    <div class="metric-details"><span class="metric-label">Overall Course Progress</span><h3 class="metric-value">78% Mean</h3></div>
+                </div>
+            </section>
+
+            <div class="workspace-main">
+                <h2 style="margin-bottom: 1.5rem;">Completed Programs & Earned Credentials</h2>
+                <div class="active-course-row" style="grid-template-columns: 2fr 1fr auto;">
+                    <div>
+                        <h3 style="color: var(--dark-color)">Foundational Frontend Interface Engineering</h3>
+                        <p>Completed on: May 12, 2026</p>
+                    </div>
+                    <div><span style="background-color: #dcfce7; color: #15803d; font-size: 0.8rem; font-weight: 600; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">Verified Credential Issued</span></div>
+                    <a href="certificate.html" class="btn btn-dark">View Certificate Layout</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

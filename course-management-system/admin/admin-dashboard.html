@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control Console | StudySphere</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        <aside class="sidebar admin-sidebar">
+            <div class="sidebar-brand"><a href="../index.html">Study<span>Sphere</span> Admin</a></div>
+            <nav class="sidebar-menu">
+                <a href="admin-dashboard.html" class="menu-item active"><span class="menu-icon">📊</span> Console Overview</a>
+                <a href="courses.html" class="menu-item"><span class="menu-icon">📖</span> Manage Courses</a>
+                <a href="students.html" class="menu-item"><span class="menu-icon">👥</span> Student Directory</a>
+                <a href="notifications.html" class="menu-item"><span class="menu-icon">🔔</span> Alerts</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile-summary">
+                    <div class="avatar" style="background-color: var(--dark-color); border: 1px solid var(--border-color);">AD</div>
+                    <div class="user-info"><h4>System Administrator</h4><p>Global Root Control</p></div>
+                </div>
+                <a href="../auth/admin-login.html" class="btn-logout">Exit Portal <span>➡️</span></a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div>
+                    <h1>Management Control Console Overview</h1>
+                    <p>System metrics audit summaries, course enrollment indicators, and operational charts.</p>
+                </div>
+                <a href="add-course.html" class="btn btn-dark">+ Add New Course Track</a>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon blue">👥</div>
+                    <div class="metric-details"><span class="metric-label">Active Enrolled Users</span><h3 class="metric-value">1,248 Students</h3></div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon green">📖</div>
+                    <div class="metric-details"><span class="metric-label">Published Content Tracks</span><h3 class="metric-value">14 Courses</h3></div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon orange">💳</div>
+                    <div class="metric-details"><span class="metric-label">Monthly Active Conversions</span><h3 class="metric-value">84.2% Passed</h3></div>
+                </div>
+            </section>
+
+            <div class="workspace-grid">
+                <div class="workspace-main">
+                    <div class="card-header-wrapper">
+                        <h2>Recent Operational System Updates</h2>
+                        <a href="students.html" class="view-all-link">Review Active Audit Records</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr><th>Student Profile</th><th>Track Context</th><th>Access Metric Stamp</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Jane Student</td><td>UI/UX Engineering Layouts</td><td>2 mins ago</td></tr>
+                                <tr><td>John Doe</td><td>Javascript Architectural Patterns</td><td>14 mins ago</td></tr>
+                            </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
